@@ -16,6 +16,10 @@
   margin: 20px;
 }
 
+.link {
+padding-right: 10px;
+padding-top: 6px;
+}
 .link:hover {
   text-decoration: underline;
 }
