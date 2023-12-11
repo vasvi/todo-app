@@ -1,3 +1,3 @@
-export default function(){
-    return (<>Add Todo here</>)
+export default function AddTodo(){
+    return (<>Add Todo here</>);
 }
