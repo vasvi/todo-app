@@ -18,8 +18,8 @@ const List = () => {
         {todos?.map((todo: any) => {
             return <span key={todo.id} className="flex"><li className="p-2.5" key={todo.id}>{todo.todo}</li>
             <Link href={`/${todo.id}`} className="underline border-stone-400 p-2.5">Edit</Link>
-            <button onClick={()=>mutate(todo.id)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                            Delete</button>
+            <Link href="" onClick={()=>mutate(todo.id)} className="underline border-stone-400 p-2.5">
+                            Delete</Link>
             </span>
         })}
         </ul>
