@@ -4,5 +4,5 @@ import {todoService} from '../services/todo-service';
 export const useGetTodos = () => {
     const {data} = useQuery(['todos'],  todoService.getTodos);
    
-    return {todos:data?.todos.slice(0,10)}
+    return {todos:data?.todos}
 }
