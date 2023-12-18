@@ -12,8 +12,21 @@ const getTodos = async ()=>{
     }
 }
 
+const deletePost = async (id:number) => {
+  const url = `${urlConstants.GET_TODOS}/${id}`;
+
+    const res = await axios.delete(
+      url,
+      {
+        method: "DELETE",
+      }
+    );
+    return res;
+  }
+
 export const todoService = {
-    getTodos
+    getTodos,
+    deletePost
 }
 
 // class TodoService {

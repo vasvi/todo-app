@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 export default function Layout({children, headerName, showButton}) {
   return (
-    <div className={styles.body}>
-      <div className={styles.container}>
-        <h1 className={styles.header}>{headerName}</h1>
-        {showButton? <Link className={styles.link} href="/addTodo"> Add </Link> :
-         <Link className={styles.link} href="/list"> Back </Link>}
+    <div className="m-5">
+      <div className="bg-neutral-400 text-white flex font-bold mb-5">
+        <h1 className="flex w-full p-2">{headerName}</h1>
+        {showButton? <Link className="pr-2.5 pt-1.5 hover:underline" href="/addTodo"> Add </Link> :
+         <Link className="pr-2.5 pt-1.5 hover:underline" href="/list"> Back </Link>}
       </div>
       {children}
     </div>
